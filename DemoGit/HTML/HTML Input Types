@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Hoàng Tú ANH _ 2121050197</h2>
+
+<p>The <strong>Hoàng Tú ANH _ 2121050197</strong> Hoàng Tú ANH _ 2121050197</p>
+
+<form action="/action_page.php">
+  <label for="username">Hoàng Tú ANH _ 2121050197Hoàng Tú ANH _ 2121050197</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Hoàng Tú ANH _ 2121050197</label><br>
+  <input type="password" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Hoàng Tú ANH _ 2121050197</p>
+
+</body>
+</html>
