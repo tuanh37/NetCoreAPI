@@ -1,0 +1,12 @@
+@model DemoMVC.Models.Bai3
+
+@{
+    ViewData["Title"] = "Kết quả BMI";
+}
+
+<h2>Kết quả chỉ số BMI</h2>
+
+<p><strong>BMI:</strong> @Model.BMI.ToString("0.00")</p>
+<p><strong>Phân loại:</strong> @Model.PhanLoai</p>
+
+<a asp-action="Index">← Tính lại</a>

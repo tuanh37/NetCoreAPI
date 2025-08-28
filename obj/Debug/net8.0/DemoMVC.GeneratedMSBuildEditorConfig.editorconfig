@@ -34,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpMlxSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Net_Core_API/DemoMVC/Views/Bai3/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpM1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Net_Core_API/DemoMVC/Views/Bai3/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpM1xSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Net_Core_API/DemoMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

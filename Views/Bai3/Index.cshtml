@@ -1,0 +1,19 @@
+@model DemoMVC.Models.Bai3
+
+@{
+    ViewData["Title"] = "Bài 3 - Tính BMI";
+}
+
+<h2>Tính chỉ số BMI</h2>
+
+<form asp-controller="Bai3" asp-action="Result" method="post">
+    <label>Cân nặng (kg):</label>
+    <input asp-for="CanNang" type="number" step="0.1" required />
+    <br />
+
+    <label>Chiều cao (m):</label>
+    <input asp-for="ChieuCao" type="number" step="0.01" required />
+    <br /><br />
+
+    <button type="submit">Tính BMI</button>
+</form>
