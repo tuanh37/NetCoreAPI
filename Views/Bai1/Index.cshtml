@@ -1,0 +1,19 @@
+@model DemoMVC.Models.Bai1
+
+<h2>Nhập thông tin</h2>
+
+<form asp-action="Index" method="post">
+    <div>
+        <label>Họ tên:</label>
+        <input type="text" name="FullName" required />
+    </div>
+    <div>
+        <label>Địa chỉ:</label>
+        <input type="text" name="Address" />
+    </div>
+    <div>
+        <label>Năm sinh:</label>
+        <input type="number" name="BirthYear" required />
+    </div>
+    <button type="submit">Hiển thị kết quả</button>
+</form>
