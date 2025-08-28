@@ -1,0 +1,28 @@
+@model DemoMVC.Models.Bai2
+
+@{
+    ViewData["Title"] = "Bài 2 - Máy tính";
+}
+
+<h2>Bài 2 - Máy tính đơn giản</h2>
+
+<form asp-controller="Bai2" asp-action="Result" method="post">
+    <label>Số A:</label>
+    <input asp-for="SoA" type="number" required />
+    <br />
+
+    <label>Số B:</label>
+    <input asp-for="SoB" type="number" required />
+    <br />
+
+    <label>Phép tính:</label>
+    <select asp-for="PhepTinh">
+        <option value="cong">Cộng (+)</option>
+        <option value="tru">Trừ (-)</option>
+        <option value="nhan">Nhân (×)</option>
+        <option value="chia">Chia (÷)</option>
+    </select>
+    <br /><br />
+
+    <button type="submit">Tính</button>
+</form>
