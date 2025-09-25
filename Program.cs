@@ -1,12 +1,18 @@
+using Microsoft.EntityFrameworkCore;
+using DemoMVC.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Đăng ký DbContext với SQLite
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.")));
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -14,13 +20,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-// Thêm dòng này để phục vụ các     file tĩnh (css, js, hình ảnh) trong wwwroot
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseStaticFiles();
-
 
 app.UseAuthorization();
 
